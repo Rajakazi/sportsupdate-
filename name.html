@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="img/the-ball-sport-gate-football-wallpaper-preview.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="name.html">Name</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                   <a href=""><i class="fa-solid fa-bars"></i></a>
+                <a href="login.html" class="btn login-btn">Login</a>
+                <a href="signup.html" class="btn signup-btn">Sign Up</a>
+
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="image-container1">
+        <img src="img/HD-wallpaper-fifa-world-cup-2022-iconic-moment-thumbnail.jpg" alt="Beautiful Image">
+    </div>
+    <div class="search-container11">
+        <input type="text" id="searchBox" placeholder="Search..." onkeyup="showSuggestions (this.value)">
+        <button class="search-btn">🔍</button>
+        <br>
+        <ul id="suggestions"></ul>
+    
+    
+    
+    </div>
+    <div class="container">
+        <p10>Top Players of 2024/2025</p10>
+
+        <!-- Player Cards -->
+        <div class="player-list">
+            <div class="player-card">
+                <h2>Lionel Messi</h2>
+                <p>Team: Inter Miami</p>
+            </div>
+            <div class="player-card">
+                <h2>Cristiano Ronaldo</h2>
+                <p>Team: Al Nassr</p>
+            </div>
+            <div class="player-card">
+                <h2>Erling Haaland</h2>
+                <p>Team: Manchester City</p>
+            </div>
+            <div class="player-card">
+                <h2>Kylian Mbappé</h2>
+                <p>Team: Real Madrid</p>
+            </div>
+            <div class="player-card">
+                <h2>Vinícius Júnior</h2>
+                <p>Team: Real Madrid</p>
+            </div>
+            <div class="player-card">
+                <h2>Jude Bellingham</h2>
+                <p>Team: Real Madrid</p>
+            </div>
+            <div class="player-card">
+                <h2>Robert Lewandowski</h2>
+                <p>Team: Barcelona</p>
+            </div>
+            <div class="player-card">
+                <h2>Kevin De Bruyne</h2>
+                <p>Team: Manchester City</p>
+            </div>
+            <div class="player-card">
+                <h2>Neymar Jr.</h2>
+                <p>Team: Paris Saint-Germain</p>
+            </div>
+            <div class="player-card">
+                <h2>Mohamed Salah</h2>
+                <p>Team: Liverpool</p>
+            </div>
+            <div class="player-card"><h2>Harry Kane</h2><p>Team: Bayern Munich</p></div>
+            <div class="player-card"><h2>Karim Benzema</h2><p>Team: Al-Ittihad</p></div>
+            <div class="player-card"><h2>Thibaut Courtois</h2><p>Team: Real Madrid</p></div>
+            <div class="player-card"><h2>Marco Verratti</h2><p>Team: Al-Hilal</p></div>
+            <div class="player-card"><h2>Gareth Bale</h2><p>Team: Los Angeles FC</p></div>
+            <div class="player-card"><h2>Riyad Mahrez</h2><p>Team: Al-Ahli</p></div>
+            <div class="player-card"><h2>Paulo Dybala</h2><p>Team: Roma</p></div>
+            <div class="player-card"><h2>Achraf Hakimi</h2><p>Team: Paris Saint-Germain</p></div>
+            <div class="player-card"><h2>Robert Firmino</h2><p>Team: Al-Ahli</p></div>
+            <div class="player-card"><h2>Dominik Szoboszlai</h2><p>Team: Liverpool</p></div>
+             <!-- More Players from Various Leagues -->
+             <div class="player-card"><h2>Gerard Piqué</h2><p>Team: Retired</p></div>
+             <div class="player-card"><h2>Luka Modrić</h2><p>Team: Real Madrid</p></div>
+             <div class="player-card"><h2>Robert Lewandowski</h2><p>Team: Barcelona</p></div>
+             <div class="player-card"><h2>Son Heung-min</h2><p>Team: Tottenham Hotspur</p></div>
+             <div class="player-card"><h2>Romelu Lukaku</h2><p>Team: AS Roma</p></div>
+             <div class="player-card"><h2>Paul Pogba</h2><p>Team: Juventus</p></div>
+             <div class="player-card"><h2>Raheem Sterling</h2><p>Team: Chelsea</p></div>
+             <div class="player-card"><h2>David De Gea</h2><p>Team: Free Agent</p></div>
+             <div class="player-card"><h2>Alisson Becker</h2><p>Team: Liverpool</p></div>
+             <div class="player-card"><h2>Giorgio Chiellini</h2><p>Team: Los Angeles FC</p></div>
+                <!-- Croatia -->
+        
+            <div class="player-card"><h2>Luka Modrić</h2><p>Team: Real Madrid</p></div>
+            <div class="player-card"><h2>Ivan Rakitić</h2><p>Team: Sevilla FC</p></div>
+
+            <!-- Uruguay -->
+           
+            <div class="player-card"><h2>Luis Suárez</h2><p>Team: Grêmio</p></div>
+            <div class="player-card"><h2>Edinson Cavani</h><p>Team: Valencia</p></div>
+
+            <!-- Mexico -->
+            
+            <div class="player-card"><h2>Hirving Lozano</h2><p>Team: Napoli</p></div>
+            <div class="player-card"><h2>Raúl Jiménez</h2><p>Team: Wolverhampton Wanderers</p></div>
+
+            <!-- Colombia -->
+            
+            <div class="player-card"><h2>James Rodríguez</h2><p>Team: Olympiacos</p></div>
+            <div class="player-card"><h2>Radamel Falcao</h2><p>Team: Rayo Vallecano</p></div>
+
+            <!-- Africa -->
+           
+            <div class="player-card"><h2>Sadio Mané</h2><p>Team: Al Nassr</p></div>
+            <div class="player-card"><h2>Mohamed Salah</h2><p>Team: Liverpool</p></div>
+        
+            <div class="player-card"><h2>Rohit Chand</h2><p>Team: Persik Kediri (Indonesia)</p></div>
+            <div class="player-card"><h2>Raju Kaji Shakya</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Biraj Maharjan</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Sagar Thapa</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Anjan Bista</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Ananta Tamang</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Bharat Khawas</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Nawayug Shrestha</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Anil Gurung</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Ju Manu Rai</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Sandip Rai</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Rohit Kumar</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Shiva Shrestha</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Amrit Gurung</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Sunil Bal</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Jitendra Singh</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Gyanendra Malla</h2><p>Team: Nepal National Team</p></div>
+            <div class="player-card"><h2>Pramesh Khatri</h2><p>Team: Manang Marshyangdi Club</p></div>
+
+
+            <div class="player-card"><h2>Paras Khadka</h2><p>Role: All-rounder</p></div>
+            <div class="player-card"><h2>Sandeep Lamichhane</h2><p>Role: Leg-spinner</p></div>
+            <div class="player-card"><h2>Gyanendra Malla</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Dipendra Singh Airee</h2><p>Role: All-rounder</p></div>
+            <div class="player-card"><h2>Sompal Kami</h2><p>Role: Bowler</p></div>
+            <div class="player-card"><h2>Binod Bhandari</h2><p>Role: Wicketkeeper-batsman</p></div>
+            <div class="player-card"><h2>Rohit Kumar Paudel</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Karan KC</h2><p>Role: Bowler</p></div>
+            <div class="player-card"><h2>Rajesh Pulami</h2><p>Role: All-rounder</p></div>
+            <div class="player-card"><h2>Sharne Warne</h2><p>Role: Bowler</p></div>
+            <div class="player-card"><h2>Prithu Baskota</h2><p>Role: Bowler</p></div>
+            <div class="player-card"><h2>Rohit Kumar Paudel</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Krishna Karki</h2><p>Role: Bowler</p></div>
+            <div class="player-card"><h2>Jitendra Mukhiya</h2><p>Role: Bowler</p></div>
+            <div class="player-card"><h2>Rajbir Singh</h2><p>Role: All-rounder</p></div>
+            <div class="player-card"><h2>Sharad Vesawkar</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Rohit Chand</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Jitendra Singh</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Amrit Kumar</h2><p>Role: All-rounder</p></div>
+            <div class="player-card"><h2>Rajiv Shrestha</h2><p>Role: Batsman</p></div>
+            <div class="player-card"><h2>Rohit Kumar</h2><p>Role: All-rounder</p></div>
+
+
+
+
+
+
+
+
+  <div class="player-card"><h2>Dean Henderson</h2><p>Role: Goalkeeper</p></div>
+<div class="player-card"><h2>Jordan Pickford</h2><p>Role: Goalkeeper</p></div>
+<div class="player-card"><h2>James Trafford</h2><p>Role: Goalkeeper</p></div>
+
+<div class="player-card"><h2>Marc Guéhi</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Lewis Hall</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Taylor Harwood-Bellis</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Ezri Konsa</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Rico Lewis</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Tino Livramento</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Jarell Quansah</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Kyle Walker</h2><p>Role: Defender</p></div>
+
+<div class="player-card"><h2>Conor Gallagher</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Morgan Gibbs-White</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Angel Gomes</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Curtis Jones</h2><p>Role: Midfielder</p></div>
+
+<div class="player-card"><h2>Jude Bellingham</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Jarrod Bowen</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Anthony Gordon</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Harry Kane</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Noni Madueke</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Morgan Rogers</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Dominic Solanke</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Ollie Watkins</h2><p>Role: Forward</p></div>
+
+
+
+
+
+
+            <div class="player-card">
+                <h2>Gurpreet Singh Sandhu</h2>
+                <p>Role: Goalkeeper</p>
+            </div>
+            <div class="player-card">
+                <h2>Amrinder Singh</h2>
+                <p>Role: Goalkeeper</p>
+            </div>
+            <div class="player-card">
+                <h2>Vishal Kaith</h2>
+                <p>Role: Goalkeeper</p>
+            </div>
+
+            <!-- Defenders -->
+            <div class="player-card">
+                <h2>Sandesh Jhingan</h2>
+                <p>Role: Defender</p>
+            </div>
+            <div class="player-card">
+                <h2>Subhasish Bose</h2>
+                <p>Role: Defender</p>
+            </div>
+            <div class="player-card">
+                <h2>Pritam Kotal</h2>
+                <p>Role: Defender</p>
+            </div>
+            <div class="player-card">
+                <h2>Rahul Bheke</h2>
+                <p>Role: Defender</p>
+            </div>
+
+            <!-- Midfielders -->
+            <div class="player-card">
+                <h2>Anirudh Thapa</h2>
+                <p>Role: Midfielder</p>
+            </div>
+            <div class="player-card">
+                <h2>Brandon Fernandes</h2>
+                <p>Role: Midfielder</p>
+            </div>
+            <div class="player-card">
+                <h2>Udanta Singh</h2>
+                <p>Role: Midfielder</p>
+            </div>
+
+            <!-- Forwards -->
+            <div class="player-card">
+                <h2>Sunil Chhetri</h2>
+                <p>Role: Forward</p>
+            </div>
+            <div class="player-card">
+                <h2>Ishan Pandita</h2>
+                <p>Role: Forward</p>
+            </div>
+            <div class="player-card">
+                <h2>Manvir Singh</h2>
+                <p>Role: Forward</p>
+            </div>
+
+
+
+
+            
+        <div class="player-card">Rohit Sharma</div>
+        <div class="player-card">Virat Kohli</div>
+        <div class="player-card">Jasprit Bumrah</div>
+        <div class="player-card">Ravindra Jadeja</div>
+
+        <!-- Grade A Players -->
+       
+        <div class="player-card">Ravichandran Ashwin</div>
+        <div class="player-card">Mohammad Shami</div>
+        <div class="player-card">Mohammed Siraj</div>
+        <div class="player-card">KL Rahul</div>
+        <div class="player-card">Shubman Gill</div>
+        <div class="player-card">Hardik Pandya</div>
+
+        <!-- Grade B Players -->
+       
+        <div class="player-card">Suryakumar Yadav</div>
+        <div class="player-card">Rishabh Pant</div>
+        <div class="player-card">Kuldeep Yadav</div>
+        <div class="player-card">Axar Patel</div>
+        <div class="player-card">Yashasvi Jaiswal</div>
+
+        
+        <div class="player-card">Rinku Singh</div>
+        <div class="player-card">Tilak Varma</div>
+        <div class="player-card">Ruturaj Gaikwad</div>
+        <div class="player-card">Shardul Thakur</div>
+        <div class="player-card">Shivam Dube</div>
+        <div class="player-card">Ravi Bishnoi</div>
+        <div class="player-card">Jitesh Sharma</div>
+        <div class="player-card">Washington Sundar</div>
+        <div class="player-card">Mukesh Kumar</div>
+        <div class="player-card">Sanju Samson</div>
+        <div class="player-card">Arshdeep Singh</div>
+        <div class="player-card">KS Bharat</div>
+        <div class="player-card">Prasidh Krishna</div>
+        <div class="player-card">Avesh Khan</div>
+        <div class="player-card">Rajat Patidar</div>
+        <div class="player-card">Sarfaraz Khan</div>
+        <div class="player-card">Dhruv Jurel</div>
+
+
+
+        <div class="player-card"><h2>Alisson Becker</h2><p>Role: Goalkeeper</p></div>
+<div class="player-card"><h2>Ederson Moraes</h2><p>Role: Goalkeeper</p></div>
+<div class="player-card"><h2>Weverton</h2><p>Role: Goalkeeper</p></div>
+
+<div class="player-card"><h2>Danilo</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Marquinhos</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Éder Militão</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Alex Telles</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Thiago Silva</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Guilherme Arana</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Gleison Bremer</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Renan Lodi</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Danilo Avelar</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Gustavo Gómez</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Guilherme Arana</h2><p>Role: Defender</p></div>
+<div class="player-card"><h2>Gustavo Scarpa</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Lucas Paquetá</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Bruno Guimarães</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Casemiro</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Fred</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Andreas Pereira</h2><p>Role: Midfielder</p></div>
+<div class="player-card"><h2>Lucas Moura</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Vinícius Júnior</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Raphinha</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Gabriel Jesus</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Rodrygo</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Richarlison</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Gabriel Martinelli</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Antony</h2><p>Role: Forward</p></div>
+<div class="player-card"><h2>Roberto Firmino</h2><p>Role: Forward</p></div>
+
+
+        </div>
+    </div>
+    <button class="beautiful-button1" onclick="buttonClick()">Click Here</button>
+    <script src="script.js"></script>
+</body>
+</html>
