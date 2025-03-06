@@ -1,1 +1,287 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header & Logo Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+}
+.logo {
+    width: 60px; 
+    clip-path: circle();
+    /* Adjust size as needed */
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(20, 17, 17);
+    margin-right: 700px;
+}
+
+.logo-text span {
+    color: #ff512f;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgba(56, 3, 56, 0.904);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 30px;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 123, 255);
+}
+
+/* Heading Styling */
+h1 {
+    color: rgb(12, 245, 4);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 200px;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Background Video */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Centered Button */
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+/* Small Button */
+button {
+    background: #ff9900;
+    color: #fff;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    float: right;
+}
+
+button:hover {
+    background: #e600c0;
+}
+
+/* -------- Responsive Design -------- */
+
+/* Tablet View (Max Width: 992px) */
+/* -------- Responsive Design -------- */
+
+/* Large Tablets & Small Laptops (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .logo-text {
+        margin-right: 400px;
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 55px;
+        margin-top: 180px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    button {
+        width: 75px;
+        height: 28px;
+    }
+}
+
+/* Tablet View (Max Width: 992px) */
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-text {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 150px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+}
+
+/* Mobile View (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+    button {
+        width: 70px;
+        height: 26px;
+    }
+}
+
+/* Small Mobile View (Max Width: 576px) */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 6px 15px;
+    }
+
+    button {
+        width: 65px;
+        height: 24px;
+    }
+}
+
+/* Extra Small Mobile View (Max Width: 400px) */
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+        margin-top: 80px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    button {
+        width: 60px;
+        height: 22px;
+    }
+}

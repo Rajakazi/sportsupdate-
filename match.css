@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: azure;
+}
+ 
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(20, 18, 18);
+    margin-right: 900px;
+}
+span{
+    color: #ff512f;
+}
+.logo {
+    width: 60px; 
+    clip-path: circle();
+    /* Adjust size as needed */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 100px;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block; /* Aligns the list items horizontally */
+    margin: 15px;
+}
+
+header nav ul li a {
+    color: rgba(8, 3, 8, 0.904);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    transition: color 0.3s ease; /* Adds smooth transition for hover effect */
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 123, 255); /* Change color to blue on hover */
+}
+
+h3{
+    color: black;
+    font-weight: bold;
+    background-color: aqua;
+    width: 233px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 800px;
+    margin-top: 250px;
+}
+
+h4{
+    color: #ff512f;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 900px;
+    margin-top: 20px;
+}
+
+.header1 {
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 800px;
+    margin-left: 548px;
+    border-radius: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schedule-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.schedule-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.live {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .logo-text {
+        margin-right: 200px;
+        font-size: 20px;
+    }
+    header nav ul {
+        text-align: center;
+        float: none;
+    }
+    h3, h4 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .header1 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .logo-text {
+        margin-right: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+    h3, h4 {
+        width: 80%;
+    }
+    .header1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 16px;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    h3, h4 {
+        font-size: 18px;
+        width: 100%;
+    }
+    .header1 {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

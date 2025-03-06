@@ -6,55 +6,54 @@
     <title>Sports Update</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="img/WhatsApp Image 2025-02-27 at 11.10.16_a660ff7b.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="cricket.css">
 </head>
 <body>
     <header>
-        <nav>
+      
+        <nav> 
+            
             <ul>
                 <img src="img/WhatsApp Image 2025-02-27 at 11.10.16_a660ff7b.jpg" alt="Website Logo" class="logo">
-                <span class="logo-text">Spo<span>rts</span> Up<span>date</span></span>
+                    <span class="logo-text">Spo<span>rts</span> Up<span>date</span></span>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="football.html">Football</a></li>
                 <li><a href="sports.html">Sports</a></li>
                 <li><a href="cricket.html">Cricket</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="comment.html">Comment</a></li>
-
+                <button onclick="logout()">Logout</button>
+              
             </ul>
         </nav>
-        
     </header>
-    <br>
-    <br>
     <div class="video-container">
         <video autoplay loop muted>
-            <source src="background.mp4" type="video/mp4">
+            <source src="img/The Epic Montage _ T20 World Cup 2024 Final.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
     </div>
-    <br>
-    
-
-        <h1>Send Email</h1>
-        <form id="emailForm">
-            <label for="to">To:</label>
-            <input type="email" id="to" name="to" required><br><br>
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required><br><br>
-            <label for="body">Body:</label>
-            <textarea id="body" name="body" required></textarea><br><br>
-            <button type="submit">Send Email</button>
-        </form>
+    <div class="header">Cricket Live Link</div>
+    <div class="container">
+        <div class="schedule-item">
+            <img src="img/OIF.jpg" alt="Champions Trophy">
+            <a href="match.html">Champions Trophy 2025 Live</a>
+        </div>
+        <div class="schedule-item">
+            <img src="img/th (4).jpg" alt="World Cup">
+            <a href="https://www.nepalcricket.com/4nations">League 2</a>
+        </div>
+        <div class="schedule-item">
+            <img src="img/th.jpg" alt="Australia Tour">
+            <a href="https://www.cricket.com.au/tours/sri-lanka-2025">Australia Tour of Sri Lanka, 2025</a>
+        </div>
+    </div>
     <script>
         function logout() {
            
             window.location.href = "login.html";
         }
         document.getElementById('logout-btn')?.addEventListener('click', logout);
+        
     </script>
-     <script src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-     <script src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
-    <script src="app.js"></script>
 </body>
 </html>

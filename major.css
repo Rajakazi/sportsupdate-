@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgray;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 700px;
+}
+span{
+    color: #ff512f;
+}
+.logo {
+    width: 60px; 
+    clip-path: circle();
+    /* Adjust size as needed */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 100px;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+header nav ul li a {
+    color: rgba(236, 235, 236, 0.904);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 123, 255);
+}
+
+.header1{
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 600px;
+    margin-left: 650px;
+    margin-top: 250px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: 600px;
+    margin-left: 650px;
+}
+
+.match:hover {
+    background: #f9f9f9;
+}
+
+.match-end {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .logo-text {
+        margin-right: 200px;
+        font-size: 20px;
+    }
+    .header1, .match {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        float: none;
+        margin-left: 0;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .logo-text {
+        text-align: center;
+        margin-right: 0;
+    }
+    .header1, .match {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 18px;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .header1, .match {
+        font-size: 14px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

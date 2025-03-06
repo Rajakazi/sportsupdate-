@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Comment System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 200px;
+           margin-left: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            outline: none;
+        }
+
+        /* Stylish Comment Button */
+        .comment-btn {
+            margin-top: 10px;
+            background: linear-gradient(135deg, #28a745, #218838);
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+        }
+        .comment-btn:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .comment-btn:active {
+            transform: scale(0.95);
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* "Click Here to Comment" Button */
+        .bottom-comment-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom-comment-btn button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .bottom-comment-btn button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+
+}
+.logo {
+    width: 60px; 
+    clip-path: circle();
+    /* Adjust size as needed */
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(20, 17, 17);
+    margin-right: 700px;
+}
+
+.logo-text span {
+    color: #ff512f;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgba(56, 3, 56, 0.904);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 30px;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 123, 255);
+}
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            textarea {
+                height: 80px;
+            }
+            .comment-btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .bottom-comment-btn button {
+                font-size: 13px;
+                padding: 8px 15px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            h2, h3 {
+                font-size: 18px;
+            }
+            textarea {
+                height: 70px;
+            }
+            .comment-btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .bottom-comment-btn button {
+                font-size: 12px;
+                padding: 7px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+        <nav> 
+            
+            <ul>
+                <img src="img/WhatsApp Image 2025-02-27 at 11.10.16_a660ff7b.jpg" alt="Website Logo" class="logo">
+                    <span class="logo-text">Spo<span>rts</span> Up<span>date</span></span>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="football.html">Football</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+
+    <div class="container">
+        <h2>Public Comment System</h2>
+        <textarea id="commentInput" placeholder="Write your comment..."></textarea>
+        <button id="submitComment" class="comment-btn">Post Comment</button>
+
+        <div class="comment-section" id="commentSection">
+            <h3>Comments:</h3>
+        </div>
+
+        <!-- "Click Here to Comment" Button -->
+        <div class="bottom-comment-btn">
+            <button onclick="scrollToComment()">Click Here to Comment</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submitComment").addEventListener("click", function() {
+            let commentInput = document.getElementById("commentInput");
+            let commentText = commentInput.value.trim();
+
+            if (commentText === "") {
+                alert("Please enter a comment!");
+                return;
+            }
+
+            let commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+            commentDiv.textContent = commentText;
+
+            document.getElementById("commentSection").appendChild(commentDiv); // Adds at the bottom
+            commentInput.value = ""; // Clear input
+        });
+
+        function scrollToComment() {
+            document.getElementById("commentInput").focus();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffacac;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+
+}
+.logo {
+    width: 60px; 
+    clip-path: circle();
+    /* Adjust size as needed */
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(20, 17, 17);
+    margin-right: 650px;
+}
+
+.logo-text span {
+    color: #ff512f;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgba(56, 3, 56, 0.904);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 30px;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 123, 255);
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 200px;
+}
+h1 {
+    color: #333;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.sport {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.sport:hover {
+    transform: scale(1.1);
+    background: #ff5733;
+    color: white;
+}

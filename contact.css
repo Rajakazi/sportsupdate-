@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(221, 169, 169);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(10, 0, 0);
+    margin-right: 700px;
+}
+
+span {
+    color: #ff512f;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 30px;
+}
+
+header nav ul li a {
+    color: rgba(8, 1, 8, 0.904);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 123, 255);
+}
+
+h1 {
+    color: azure;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 60px;
+    clip-path: circle();
+}
+
+#emailForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .logo-text {
+        margin-right: 400px;
+    }
+    header nav ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-text {
+        margin-right: 0;
+        text-align: center;
+    }
+    header nav ul {
+        text-align: center;
+        padding: 10px 0;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+}

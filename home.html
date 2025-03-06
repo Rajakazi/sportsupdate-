@@ -6,7 +6,7 @@
     <title>Sports Update</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="img/WhatsApp Image 2025-02-27 at 11.10.16_a660ff7b.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -24,25 +24,28 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <h1>All Sports Names</h1>
-        <div class="grid">
-            <div class="sport">Football</div>
-            <div class="sport">Basketball</div>
-            <div class="sport">Cricket</div>
-            <div class="sport">Tennis</div>
-            <div class="sport">Baseball</div>
-            <div class="sport">Hockey</div>
-            <div class="sport">Golf</div>
-            <div class="sport">Badminton</div>
-            <div class="sport">Table Tennis</div>
-            <div class="sport">Swimming</div>
-            <div class="sport">Volleyball</div>
-            <div class="sport">Athletics</div>
-            <div class="sport">Boxing</div>
-            <div class="sport">Wrestling</div>
-            <div class="sport">Cycling</div>
-        </div>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="img/Neymar Transition • 4K Clips For Edits.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
     </div>
+    <button onclick="logout()">Logout</button>
+    <br>
+    <h1>WELCOME TO SPORT UPDATE</h1>
+ <div class="button">
+    <a href="video.html" class="btn">WATCH VIDEO</a>
+    <a href="skills.html" class="btn">BASIC SKILLS</a>
+    <a href="more.html" class="btn">MORE DETAILS</a>
+    <a href="newsmore.html" class="btn">NEWS MORE</a>
+ </div>
+    <script>
+        function logout() {
+           
+            window.location.href = "login.html";
+        }
+        document.getElementById('logout-btn')?.addEventListener('click', logout);
+        
+    </script>
 </body>
 </html>

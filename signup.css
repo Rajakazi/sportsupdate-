@@ -1,40 +1,42 @@
-/* Base Styles for Large Screens */
-* {
+*{
     margin: 0;
     padding: 0;
 }
-body {
+body{
     background: #634e30;
-    font-family: Arial, sans-serif;
 }
-.container {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-}
-
-h2 {
-    color: aliceblue;
-    font-size: 25px;
+.logo-text {
+    font-size: 24px;
     font-weight: bold;
-}
-.logo-text{
-    color: #1bf507;
-    font-size: 25px;
-}
-span{
-    color: #e600c0;
-}
+    color: white;
+    margin-right: 1500px;
+  }
+  span{
+    color: #ff512f;
+  }
+  
+
 .logo {
     width: 60px; 
     clip-path: circle();
     /* Adjust size as needed */
+}
+.container{
+    margin-top: 200px;
+}
+h2{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 850px;
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    clip-path: circle();
+    margin-left: 850px;
 }
 
 input, button {
@@ -44,12 +46,17 @@ input, button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-top: 20px;
+    background: #444;
+ 
+
 }
 
 input {
     background: #444;
     color: #fff;
+    margin-left: 760px;
+
 }
 
 button {
@@ -57,19 +64,24 @@ button {
     color: #fff;
     cursor: pointer;
     width: 200px;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-left: 790px;
 }
 
 button:hover {
-    background: #e600c0;
+    background: #d350bd;
+}
+p{
+    margin-left: 790px;
 }
 
 a {
     color: #ff9900;
     text-decoration: none;
-}
+    margin-top: 10px;
 
+}
 .login-btn {
     width: 100%;
     padding: 10px;
@@ -80,6 +92,7 @@ a {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+
 }
 
 .login-btn:hover {
@@ -102,10 +115,6 @@ a {
     background: #1b5fcc;
     transform: scale(1.05);
 }
-
-/* ---------- Media Queries ---------- */
-
-/* For Tablets & Small Screens (Max Width: 1024px) */
 @media (max-width: 1024px) {
     .container {
         width: 90%;
@@ -190,3 +199,4 @@ a {
         padding: 8px;
     }
 }
+
